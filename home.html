@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Nrupalben Nirajkumar Dave" />
+    <meta name="description" content="A website for TechWorld Gadget Shop." />
+    <title>TechWorld Gadget Shop</title>
+    <!-- Link to css file -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      function showWatchInfo() {
+        $("#details1").toggle();
+        if(document.getElementById("moreInfoBtn").value = "More Info") {
+            document.getElementById("moreInfoBtn").innerHTML = "Hide Info";
+        } else {
+            document.getElementById("moreInfoBtn").innerHTML = "More Info"
+        }
+      }
+
+      function showTabInfo() {
+        $("#details2").toggle();
+        if(document.getElementById("moreInfoBtn").value = "More Info") {
+            document.getElementById("moreInfoBtn").innerHTML = "Hide Info";
+        } else {
+            document.getElementById("moreInfoBtn").innerHTML = "More Info"
+        }
+      }
+
+      function showPhoneInfo() {
+        $("#details3").toggle();
+        if(document.getElementById("moreInfoBtn").value = "More Info") {
+            document.getElementById("moreInfoBtn").innerHTML = "Hide Info";
+        } else {
+            document.getElementById("moreInfoBtn").innerHTML = "More Info"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Main header -->
+    <header class="headerContainer">
+      <h1>TechWorld Gadget Shop</h1>
+    </header>
+
+    <main>
+      <!-- Navigation -->
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+      </nav>
+
+      <div class="container">
+        <section id="products">
+          <div class="product">
+            <img src="images/watch.jpg" alt="Smart Watches" />
+            <div class="product-details">
+              <h2>Smart watch</h2>
+              <p>$199.00</p>
+              <p>Smart Watches for Women</p>
+
+              <button class="more-info" onclick="showWatchInfo()" id="moreInfoBtn">
+                More Info
+              </button>
+              <div id="details1"  hidden>
+                <p>About this item</p>
+                <ul>
+                  <li>
+                    Our smartwatch features high-quality Bluetooth technology.
+                  </li>
+                  <li>
+                    Our smartwatch is equipped with a stunning 1.32-inch
+                    high-definition full touch screen that offers vivid and
+                    colorful image display, providing better visual effects and
+                    a silky smooth operating touch.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <img src="images/tablets.jpg" alt="tablet" />
+            <div class="product-details">
+              <h2>Tablets</h2>
+              <p>$499.00</p>
+              <p>New Amazon Fire HD 8 tablet</p>
+
+              <button class="more-info"  onclick="showTabInfo()">More Info</button>
+              <div id="details2"  hidden>
+                <p>About this item</p>
+                <ul>
+                  <li>
+                    Fire HD 8 offers an 8" HD display for seamless streaming and
+                    gaming, coupled with a 5MP rear facing camera for
+                    photos—with a thin, light, durable design.
+                  </li>
+                  <li>
+                    Responsive with all day battery life - Includes 3GB RAM
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <img src="images/smartphone.jpg" alt="Smart Phones" />
+            <div class="product-details">
+              <h2>Smart Phones</h2>
+              <p>$699.00</p>
+              <p>Samsung Galaxy A35 5G</p>
+
+              <button class="more-info"  onclick="showPhoneInfo()">More Info</button>
+              <div id="details3" hidden>
+                <p>About this item</p>
+                <ul>
+                  <li>
+                    The brightest screen of our Galaxy A Series allows you to
+                    effortlessly enjoy content wherever you are.
+                  </li>
+                  <li>
+                    Unlock your creativity with an advanced triple-lens camera
+                    system that turns every moment into a masterpiece.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <address>
+        <p>&copy; Nrupal Dave, 2024, Conestoga College</p>
+      </address>
+    </footer>
+  </body>
+</html>

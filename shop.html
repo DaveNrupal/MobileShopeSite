@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Nrupalben Nirajkumar Dave" />
+    <meta name="description" content="A website for TechWorld Gadget Shop." />
+    <title>TechWorld Gadget Shop</title>
+    <!-- Link to css file -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="shop.js"></script>
+  </head>
+  <body>
+    <!-- Main header -->
+    <header class="headerContainer">
+      <h1>TechWorld Gadget Shop</h1>
+    </header>
+
+    <main>
+      <!-- Navigation -->
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+      </nav>
+
+      <div class="container" id="formData">
+        <form onsubmit="return generateReceipt()">
+          <center>
+            <table>
+              <tr>
+                <td>Number of Smart Phone:</td>
+                <td>
+                  <input
+                    type="text"
+                    id="phone"
+                    placeholder="Please enter number of Phone you want"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Number of Tablets:</td>
+                <td>
+                  <input
+                    type="text"
+                    id="tablets"
+                    placeholder="Please enter number of Tablets you want"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Number of Smart Watches:</td>
+                <td>
+                  <input
+                    type="text"
+                    id="watch"
+                    placeholder="Please enter number of Smartwatches you want"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Customer Name:</td>
+                <td>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Please enter Your name"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Customer Email:</td>
+                <td>
+                  <input
+                    type="text"
+                    id="email"
+                    placeholder="Please enter your email"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Customer Phone Number:</td>
+                <td>
+                  <input
+                    type="text"
+                    id="number"
+                    placeholder="Please enter your contact details"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Select Delivery Option :</td>
+                <td>
+                  <input
+                    type="radio"
+                    id="standard"
+                    name="delivery"
+                    value="Standard Delivery ($10.00)"
+                  />
+                  <label for="standard">Standard Delivery ($10.00)</label>
+                  <input
+                    type="radio"
+                    id="express"
+                    name="delivery"
+                    value="Express Delivery ($20.00) "
+                  />
+                  <label for="express">Express Delivery ($20.00) </label>
+                  <input
+                    type="radio"
+                    id="free"
+                    name="delivery"
+                    value="Free Delivery ($10.00)"
+                  />
+                  <label for="free">Free Delivery</label>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <button class="more-info">Submit</button>
+                </td>
+              </tr>
+            </table>
+          </center>
+        </form>
+      </div>
+      <div id="error" hidden></div>
+      <div id="receipt" hidden></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <address>
+        <p>&copy; Nrupal Dave, 2024, Conestoga College</p>
+      </address>
+    </footer>
+  </body>
+</html>
